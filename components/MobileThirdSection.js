@@ -29,9 +29,9 @@ export default function MobileThirdSection() {
               victories for Kalitta Motorsports since 2020.
             </motion.p>
             <motion.p style={{ opacity: secondParagraph }}>
-              With four gallons of oil used per run, the use of Mobil 1 Nitro
+              {`With four gallons of oil used per run, the use of Mobil 1 Nitro
               needs to withstands the extremes of the track. Through it's use
-              Kalitta has seen their part lifespan increased 25%.
+              Kalitta has seen their part lifespan increased 25%.`}
             </motion.p>
           </div>
         </motion.div>
