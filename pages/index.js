@@ -19,12 +19,20 @@ export default function Home() {
   const { scrollYProgress } = useViewportScroll();
 
   useEffect(() => {
+    const video = document.querySelector("video");
     if (isMobileScreen) {
       setIsMobile(true);
     }
     setTimeout(() => {
-      setDonePlaying(true);
-    }, 6500);
+      console.log(video.ended);
+      if (video.ended) {
+        setDonePlaying(true);
+      } else {
+        setTimeout(() => {
+          setDonePlaying(true);
+        }, 2000);
+      }
+    }, 7000);
   }, [isMobileScreen]);
 
   return (
