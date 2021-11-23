@@ -8,7 +8,7 @@ import ScrollDownButton from "../components/ScrollDownButton";
 import SecondSection from "../components/SecondSection";
 import ThirdSection from "../components/ThirdSection";
 import { useMediaQuery } from "react-responsive";
-import MobileSecondSection from "../components/mobileSecondSection";
+import MobileSecondSection from "../components/MobileSecondSection";
 import MobileThirdSection from "../components/MobileThirdSection";
 import FourthSection from "../components/FourthSection";
 
