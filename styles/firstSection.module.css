@@ -1,0 +1,33 @@
+.flyInContainer {
+  position: relative;
+  width: 100%;
+  height: 7000px;
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}
+
+.textFlyIn {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+}
+
+.driverGraphic {
+  background: url("../public/jr-todd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
