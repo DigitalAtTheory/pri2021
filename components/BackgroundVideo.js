@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function BackgroundVideo() {
+export default function BackgroundVideo({ handleDonePlaying }) {
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -13,6 +13,7 @@ export default function BackgroundVideo() {
         autoPlay
         playsInline
         className="relative top-0 h-full w-full object-cover"
+        onEnded={handleDonePlaying}
       />
     </motion.div>
   );

@@ -18,28 +18,25 @@ export default function Home() {
   const isMobileScreen = useMediaQuery({ query: "(max-width: 767px)" });
   const { scrollYProgress } = useViewportScroll();
 
+  const handleDonePlaying = () => {
+    setDonePlaying(true);
+  };
+
   useEffect(() => {
-    const video = document.querySelector("video");
     if (isMobileScreen) {
       setIsMobile(true);
     }
-    setTimeout(() => {
-      console.log(video.ended);
-      if (video.ended) {
-        setDonePlaying(true);
-      } else {
-        setTimeout(() => {
-          setDonePlaying(true);
-        }, 2000);
-      }
-    }, 7000);
   }, [isMobileScreen]);
 
   return (
     <>
       <div className="h-screen w-full">
         {donePlaying && <LockUp />}
-        <AnimatePresence>{!donePlaying && <BackgroundVideo />}</AnimatePresence>
+        <AnimatePresence>
+          {!donePlaying && (
+            <BackgroundVideo handleDonePlaying={handleDonePlaying} />
+          )}
+        </AnimatePresence>
         {donePlaying && <HeroGraphic />}
         {donePlaying && <ScrollDownButton />}
       </div>
