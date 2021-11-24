@@ -16,7 +16,7 @@ export default function SecondSection() {
           style={{ opacity: headingOpacity }}
           className="text-white text-7xl xl:text-8xl font-light relative z-40 text-right mr-12 pb-12"
         >
-          Fighting Friction. <br /> Winning
+          Fighting Friction. <br /> Winning Races.
         </motion.h2>
         <motion.div
           style={{ scaleX: overlayScale, originX: 0 }}
