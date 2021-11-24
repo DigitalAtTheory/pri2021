@@ -11,6 +11,7 @@ import { useMediaQuery } from "react-responsive";
 import MobileSecondSection from "../components/MobileSecondSection";
 import MobileThirdSection from "../components/MobileThirdSection";
 import FourthSection from "../components/FourthSection";
+import FormSection from "../components/FormSection";
 
 export default function Home() {
   const [donePlaying, setDonePlaying] = useState(false);
@@ -44,13 +45,13 @@ export default function Home() {
       {isMobile ? <MobileSecondSection /> : <SecondSection />}
       {isMobile ? <MobileThirdSection /> : <ThirdSection />}
       <FourthSection />
-      <SecondSection />
-      <button
+      <FormSection />
+      {/* <button
         className="sticky bottom-0 left-0 bg-red-500 text-white py-4 px-8 z-50"
         onClick={() => console.log(scrollYProgress.current)}
       >
         Log scroll progress
-      </button>
+      </button> */}
     </>
   );
 }

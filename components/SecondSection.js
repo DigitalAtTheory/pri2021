@@ -4,10 +4,10 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function SecondSection() {
   const { scrollYProgress } = useViewportScroll();
-  const headingOpacity = useTransform(scrollYProgress, [0.411, 0.427], [0, 1]);
-  const overlayScale = useTransform(scrollYProgress, [0.427, 0.459], [0, 1]);
-  const firstParagraph = useTransform(scrollYProgress, [0.46, 0.48], [0, 1]);
-  const secondParagraph = useTransform(scrollYProgress, [0.48, 0.5], [0, 1]);
+  const headingOpacity = useTransform(scrollYProgress, [0.454, 0.49], [0, 1]);
+  const overlayScale = useTransform(scrollYProgress, [0.49, 0.52], [0, 1]);
+  const firstParagraph = useTransform(scrollYProgress, [0.52, 0.55], [0, 1]);
+  const secondParagraph = useTransform(scrollYProgress, [0.55, 0.58], [0, 1]);
   return (
     <div className={styles.sectionContainer}>
       <div className="h-screen text-white sticky top-0 overflow-hidden w-full flex items-end justify-end">
