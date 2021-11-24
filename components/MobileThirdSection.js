@@ -4,10 +4,10 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function MobileThirdSection() {
   const { scrollYProgress } = useViewportScroll();
-  const headingOpacity = useTransform(scrollYProgress, [0.572, 0.594], [0, 1]);
-  const overlayScale = useTransform(scrollYProgress, [0.595, 0.6], [0, 1]);
-  const firstParagraph = useTransform(scrollYProgress, [0.6, 0.65], [0, 1]);
-  const secondParagraph = useTransform(scrollYProgress, [0.65, 0.7], [0, 1]);
+  const headingOpacity = useTransform(scrollYProgress, [0.632, 0.66], [0, 1]);
+  const overlayScale = useTransform(scrollYProgress, [0.66, 0.69], [0, 1]);
+  const firstParagraph = useTransform(scrollYProgress, [0.69, 0.72], [0, 1]);
+  const secondParagraph = useTransform(scrollYProgress, [0.72, 0.755], [0, 1]);
   return (
     <div className={styles.sectionContainer}>
       <div className="h-screen text-white sticky top-0 overflow-hidden w-full flex items-start justify-center">
