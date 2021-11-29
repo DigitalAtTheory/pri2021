@@ -8,7 +8,7 @@ import Optins from "./Optins";
 export default function FormSection() {
   return (
     <div className="max-w-3xl px-2 mx-auto text-center">
-      <h2 className="text-white text-center text-4xl lg:text-5xl mb-12">
+      <h2 className="text-white text-center text-4xl lg:text-5xl mb-12 font-bold">
         Sign up, stay tuned
       </h2>
       <Info />
