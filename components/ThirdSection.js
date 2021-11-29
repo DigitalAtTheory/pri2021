@@ -14,7 +14,7 @@ export default function ThirdSection() {
         <SectionBGVideo videoURL="/Tech-Video-Asset-3-Slowed.mp4" />
         <motion.h2
           style={{ opacity: headingOpacity }}
-          className="text-white text-7xl xl:text-8xl font-light relative z-40 text-right mr-12 pb-12"
+          className="text-white text-7xl xl:text-8xl font-bold relative z-40 text-right ml-6 pb-12"
         >
           Mobil 1 Nitro™ 70WT
         </motion.h2>

@@ -12,6 +12,7 @@ import MobileSecondSection from "../components/MobileSecondSection";
 import MobileThirdSection from "../components/MobileThirdSection";
 import FourthSection from "../components/FourthSection";
 import FormSection from "../components/FormSection";
+import MobileHeroGraphic from "../components/MobileHeroGraphic";
 
 export default function Home() {
   const [donePlaying, setDonePlaying] = useState(false);
@@ -38,7 +39,8 @@ export default function Home() {
             <BackgroundVideo handleDonePlaying={handleDonePlaying} />
           )}
         </AnimatePresence>
-        {donePlaying && <HeroGraphic />}
+        {donePlaying && !isMobile && <HeroGraphic />}
+        {donePlaying && isMobile && <MobileHeroGraphic />}
         {donePlaying && <ScrollDownButton />}
       </div>
       <FirstSection />

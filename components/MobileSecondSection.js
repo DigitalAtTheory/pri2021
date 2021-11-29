@@ -14,7 +14,7 @@ export default function MobileSecondSection() {
         <SectionBGVideo videoURL="/Tech-Video-Asset-2-Slowed.mp4" />
         <motion.h2
           style={{ opacity: headingOpacity }}
-          className="text-white text-4xl font-light relative z-40 text-center w-full pb-12"
+          className="text-white text-4xl font-bold relative z-40 text-center w-full pb-12"
         >
           Fighting Friction. <br /> Winning Races.
         </motion.h2>

@@ -4,3 +4,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.mobileImage {
+  background: url("../public/funny-car-v2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -31,3 +31,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.MobileDriverGraphic {
+  background: url("../public/jr-todd-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

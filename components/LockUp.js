@@ -9,7 +9,14 @@ export default function LockUp() {
       animate={{ opacity: 1 }}
       transition={{ duration: 3 }}
     >
-      <Image src={logo} priority placeholder="blur" />
+      <div className="w-3/4 lg:w-1/4 mx-auto">
+        <Image
+          src={logo}
+          priority
+          placeholder="blur"
+          alt="Mobil 1/Toyota logo"
+        />
+      </div>
     </motion.div>
   );
 }
