@@ -8,7 +8,7 @@ export default function BackgroundVideo({ handleDonePlaying }) {
       className="absolute top-0 w-full h-full z-0"
     >
       <video
-        src="/Tech-Video-Hero-Background.mp4"
+        src="/Tech-Video-Hero-Background-v2.mp4"
         muted
         autoPlay
         playsInline
