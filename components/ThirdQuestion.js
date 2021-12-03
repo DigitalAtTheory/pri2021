@@ -16,7 +16,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ThirdQuestion() {
+export default function ThirdQuestion({ handleChooseRadial }) {
   const [selected, setSelected] = useState(null);
 
   return (
@@ -24,7 +24,10 @@ export default function ThirdQuestion() {
       <h3 className="text-white text-center mb-6">
         What motor oil do you use in your primary, personal car?
       </h3>
-      <RadioGroup value={selected} onChange={setSelected}>
+      <RadioGroup
+        value={selected}
+        onChange={(e) => handleChooseRadial(e, setSelected, "whatOil")}
+      >
         <RadioGroup.Label className="sr-only">Privacy setting</RadioGroup.Label>
         <div className="bg-white rounded-md -space-y-px">
           {answers.map((answer, i) => (

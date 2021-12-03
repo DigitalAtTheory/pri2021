@@ -24,14 +24,14 @@ export default function ThirdSection() {
         >
           <div className="w-96 flex flex-col gap-4 pr-8 items-center justify-center h-full">
             <motion.p style={{ opacity: firstParagraph }}>
-              Did you know that Mobil 1 worked closely with Kalitta Motorsports
-              to create Mobil 1 Nitro 70WT? The technology that helped produce
-              victories for Kalitta Motorsports since 2020.
+              Did you know that Mobil 1 engineers worked closely with Kalitta
+              Motorsports to develop Mobil 1 Racing Nitro 70WT? <br /> <br />
+              Using four gallons of oil per run, this bespoke synthetic motor
+              oil helps protect against the extremes unique to the rigors of
+              NHRA competition.
             </motion.p>
             <motion.p style={{ opacity: secondParagraph }}>
-              {`With four gallons of oil used per run, the use of Mobil 1 Nitro
-              needs to withstands the extremes of the track. Through it's use
-              Kalitta has seen their part lifespan increased 25%.`}
+              {`Ultimately, this technical collaboration has helped Kalitta Motorsports increase the lifespan of their parts by 25 percent.`}
             </motion.p>
           </div>
         </motion.div>

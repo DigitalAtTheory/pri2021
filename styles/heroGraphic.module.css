@@ -6,8 +6,15 @@
 }
 
 .mobileImage {
-  background: url("../public/funny-car-v2.png");
-  background-position: center;
+  background: url("../public/stripes.png");
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+
+.thankYou {
+  background: url("../public/funny-car-v2.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

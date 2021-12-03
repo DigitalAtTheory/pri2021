@@ -48,12 +48,12 @@ export default function Home() {
       {isMobile ? <MobileThirdSection /> : <ThirdSection />}
       <FourthSection />
       <FormSection />
-      {/* <button
+      <button
         className="sticky bottom-0 left-0 bg-red-500 text-white py-4 px-8 z-50"
         onClick={() => console.log(scrollYProgress.current)}
       >
         Log scroll progress
-      </button> */}
+      </button>
     </>
   );
 }

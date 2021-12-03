@@ -12,7 +12,7 @@ export default function FourthSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeIn" }}
-          className="mt-24 w-1/2 mx-auto"
+          className="mt-6 w-1/2 mx-auto"
         >
           <Image src={trdLogo} priority placeholder="blur" />
         </motion.div>
@@ -26,31 +26,32 @@ export default function FourthSection() {
             </h3>
             <hr className="border-red-600 border-4 my-2" />
             <p className="px-4 py-2 leading-8 text-white">
-              Since 2020, Mobil 1 has been proud partners with Kalitta
-              Motorsports, joining forces with a team that has competed in NHRA
-              for over 60 years.
+              {`Since 2020, Mobil 1 and Kalitta Motorsports have collaborated to help build on Connie Kalitta's 60 year pedigree of NHRA success.`}
             </p>
           </li>
           <li className="bg-black w-72">
             <h3 className="text-white uppercase font-bold text-center py-4">
-              Starting with a win
+              Starting off with a win
             </h3>
             <hr className="border-red-600 border-4 my-2" />
             <p className="px-4 py-2 leading-8 text-white">
-              Fittingly the relationship kicked off with a victory in the season
-              opening 2020 Winternationals by Doug Kalitta in Top Fuel.
+              Our relationship kicked off with a victory in the season opening
+              2020 Winternationals by Doug Kalitta in Top Fuel.
             </p>
           </li>
           <li className="bg-black w-72">
             <h3 className="text-white uppercase font-bold text-center py-4">
-              Adding more victories
+              And the wins just keep on coming:
             </h3>
             <hr className="border-red-600 border-4 my-2" />
             <p className="px-4 py-2 text-white">
-              Since that eventful first race, Mobil 1 and Kalitta have claimed 3
-              victories, the 2020 MidWest Nationals with Doug Kalitta in Top
-              Fuel, the 2020 U.S. Nationals with Shawn Langdon in Top Fuel and
-              the 2021 Gatornationals with J.R. Todd in Funny Car.
+              Mobil 1 and Kalitta Motorsports have since taken home a Wally at:
+              <br />
+              <br /> 2020 MidWest Nationals with Doug Kalitta in Top Fuel.
+              <br />
+              <br /> 2020 U.S. Nationals with Shawn Langdon in Top Fuel. <br />
+              <br />
+              2021 Gatornationals with J.R. Todd in Funny Car.
             </p>
           </li>
         </ul>

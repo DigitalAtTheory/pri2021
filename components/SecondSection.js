@@ -24,14 +24,14 @@ export default function SecondSection() {
         >
           <div className="w-96 flex flex-col gap-4 pl-8 items-center justify-center h-full">
             <motion.p style={{ opacity: firstParagraph }}>
-              11,000 Horsepower of 1/4 mile-tested power. While the TRD powered
-              Funny Car can make a run in about 3.5 seconds it is under immense
-              pressure.
+              This TRD-powered funny car uses its 11,000 horsepower
+              nitromethane-powered V8 to run down 1,000 feet in under four
+              seconds.
             </motion.p>
             <motion.p style={{ opacity: secondParagraph }}>
-              With engine pressure exceeding 20,000 PSI, temperatures rising to
-              180 to 280 degrees Fahrenheit, and 4 gallons of oil used per run,
-              persecision and the right parts are needed.
+              With engine pressure exceeding 20,000 PSI, and temperatures rising
+              from 180 to 280 degrees during the course of a run, only the most
+              well designed components can survive.
             </motion.p>
           </div>
         </motion.div>

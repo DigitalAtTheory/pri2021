@@ -1,4 +1,10 @@
-export default function Optins() {
+export default function Optins({
+  handleOptin,
+  privacyPolicy,
+  manufacturer,
+  raceOil,
+  kalitta,
+}) {
   return (
     <div>
       <fieldset className="space-y-5 pt-2 text-left">
@@ -10,6 +16,8 @@ export default function Optins() {
               id="privacyPolicy"
               name="privacyPolicy"
               type="checkbox"
+              checked={privacyPolicy}
+              onChange={(e) => handleOptin(e)}
               className="focus:ring-red-500 h-4 w-4 text-red-600 border-gray-300 rounded"
             />
           </div>
@@ -37,6 +45,8 @@ export default function Optins() {
               id="manufacturer"
               name="manufacturer"
               type="checkbox"
+              checked={manufacturer}
+              onChange={(e) => handleOptin(e)}
               className="focus:ring-red-500 h-4 w-4 text-red-600 border-gray-300 rounded"
             />
           </div>
@@ -56,6 +66,8 @@ export default function Optins() {
               id="raceOil"
               name="raceOil"
               type="checkbox"
+              checked={raceOil}
+              onChange={(e) => handleOptin(e)}
               className="focus:ring-red-500 h-4 w-4 text-red-600 border-gray-300 rounded"
             />
           </div>
@@ -73,6 +85,8 @@ export default function Optins() {
               id="kalitta"
               name="kalitta"
               type="checkbox"
+              checked={kalitta}
+              onChange={(e) => handleOptin(e)}
               className="focus:ring-red-500 h-4 w-4 text-red-600 border-gray-300 rounded"
             />
           </div>
