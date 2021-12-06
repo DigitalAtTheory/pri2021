@@ -7,6 +7,8 @@ import SecondQuestion from "./SecondQuestion";
 import ThirdQuestion from "./ThirdQuestion";
 import Optins from "./Optins";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function FormSection() {
   const [age, setAge] = useState("");
@@ -22,6 +24,31 @@ export default function FormSection() {
   const [kalitta, setKalitta] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
+
+  const [titleRef, titleInView] = useInView({
+    triggerOnce: true,
+  });
+  const [infoRef, infoInView] = useInView({
+    triggerOnce: true,
+  });
+  const [genderRef, genderInView] = useInView({
+    triggerOnce: true,
+  });
+  const [firstQuestionRef, firstQuestionInView] = useInView({
+    triggerOnce: true,
+  });
+  const [secondQuestionRef, secondQuestionInView] = useInView({
+    triggerOnce: true,
+  });
+  const [thirdQuestionRef, thirdQuestionInView] = useInView({
+    triggerOnce: true,
+  });
+  const [optinsRef, optinsInView] = useInView({
+    triggerOnce: true,
+  });
+  const [buttonRef, buttonInView] = useInView({
+    triggerOnce: true,
+  });
 
   const router = useRouter();
 
@@ -124,33 +151,100 @@ export default function FormSection() {
 
   return (
     <div className="max-w-3xl px-2 mx-auto text-center">
-      <h2 className="text-white text-center text-3xl lg:text-5xl mb-12 font-bold">
+      <motion.h2
+        ref={titleRef}
+        animate={{ opacity: titleInView ? 1 : 0 }}
+        transition={{ duration: 1, ease: "easeIn" }}
+        className="text-white text-center text-3xl lg:text-5xl mb-12 font-bold"
+      >
         Sign up and stay tuned for more exclusive content around Kalitta
         Motorsports and Mobil 1 in 2022.
-      </h2>
-      <Info
-        age={age}
-        email={email}
-        zipCode={zipCode}
-        handleInput={handleInput}
-      />
-      <Gender handleChooseRadial={handleChooseRadial} />
-      <FirstQuestion handleChooseRadial={handleChooseRadial} />
-      <SecondQuestion handleChooseRadial={handleChooseRadial} />
-      <ThirdQuestion handleChooseRadial={handleChooseRadial} />
-      <Optins
-        handleOptin={handleOptin}
-        privacyPolicy={privacyPolicy}
-        manufacturer={manufacturer}
-        raceOil={raceOil}
-        kalitta={kalitta}
-      />
-      <button
-        onClick={handleSubmit}
-        className="bg-red-600 text-white w-3/4 lg:w-1/2 mx-auto my-10 py-3 rounded shadow-xl"
+      </motion.h2>
+      <motion.div
+        ref={infoRef}
+        animate={{
+          y: infoInView ? 0 : 200,
+          opacity: infoInView ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
       >
-        Count me in
-      </button>
+        <Info
+          age={age}
+          email={email}
+          zipCode={zipCode}
+          handleInput={handleInput}
+        />
+      </motion.div>
+      <motion.div
+        ref={genderRef}
+        animate={{
+          y: genderInView ? 0 : 200,
+          opacity: genderInView ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+      >
+        <Gender handleChooseRadial={handleChooseRadial} />
+      </motion.div>
+      <motion.div
+        ref={firstQuestionRef}
+        animate={{
+          y: firstQuestionInView ? 0 : 200,
+          opacity: firstQuestionInView ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+      >
+        <FirstQuestion handleChooseRadial={handleChooseRadial} />
+      </motion.div>
+      <motion.div
+        ref={secondQuestionRef}
+        animate={{
+          y: secondQuestionInView ? 0 : 200,
+          opacity: secondQuestionInView ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+      >
+        <SecondQuestion handleChooseRadial={handleChooseRadial} />
+      </motion.div>
+      <motion.div
+        ref={thirdQuestionRef}
+        animate={{
+          y: thirdQuestionInView ? 0 : 200,
+          opacity: thirdQuestionInView ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+      >
+        <ThirdQuestion handleChooseRadial={handleChooseRadial} />
+      </motion.div>
+      <motion.div
+        ref={optinsRef}
+        animate={{
+          y: optinsInView ? 0 : 200,
+          opacity: optinsInView ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+      >
+        <Optins
+          handleOptin={handleOptin}
+          privacyPolicy={privacyPolicy}
+          manufacturer={manufacturer}
+          raceOil={raceOil}
+          kalitta={kalitta}
+        />
+      </motion.div>
+      <motion.div
+        ref={buttonRef}
+        animate={{
+          opacity: buttonInView ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+      >
+        <button
+          onClick={handleSubmit}
+          className="bg-red-600 text-white w-3/4 lg:w-1/2 mx-auto my-10 py-3 rounded shadow-xl"
+        >
+          Count me in
+        </button>
+      </motion.div>
       {error && (
         <div className="text-red-400 mb-12">
           <p>{errorMessage}</p>
