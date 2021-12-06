@@ -39,7 +39,7 @@ export default function FourthSection() {
           transition={{ duration: 1, ease: "easeIn" }}
           className="mt-6 w-1/2 mx-auto"
         >
-          <Image src={trdLogo} priority placeholder="blur" />
+          <Image src={trdLogo} priority placeholder="blur" alt="TRD Logo" />
         </motion.div>
         <motion.h2
           ref={titleRef}
@@ -115,7 +115,6 @@ export default function FourthSection() {
           ref={hoodTitleRef}
           animate={{ opacity: hoodTitleInView ? 1 : 0 }}
           transition={{ duration: 1, ease: "easeIn" }}
-          className="mt-6 w-1/2 mx-auto"
           className="text-white text-center font-bold text-4xl lg:text-5xl mb-24"
         >
           Go under the hood
