@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import Lockup from "../components/LockUp";
 import UnderTheHood from "../components/UnderTheHood";
 import styles from "../styles/thankYou.module.css";
@@ -8,6 +9,9 @@ import wallpaperMockup from "../public/PRI-Wallpaper-Section-funnycar.png";
 export default function ThankYouPage() {
   return (
     <div>
+      <Head>
+        <title>Thank You! | Our Proof is on the Podium</title>
+      </Head>
       <div className="max-w-3xl mx-auto lg:mb-12">
         <h1 className="text-white text-center my-12 text-4xl lg:text-5xl font-bold">{`You're in!`}</h1>
         <p className="text-white px-4 text-center pb-6">

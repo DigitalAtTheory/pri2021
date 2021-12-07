@@ -4,7 +4,7 @@ export default function Wallpapers() {
   return (
     <div className="max-w-4xl mx-auto text-center my-6">
       <Head>
-        <title>Wallpapers - Unconventionally Driven</title>
+        <title>Wallpapers | Our Proof is on the Podium</title>
       </Head>
       <UnderTheHood />
       <h1 className="text-gray-50 mb-8 text-4xl font-bold mb-12">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Head from "next/head";
 import BackgroundVideo from "../components/BackgroundVideo";
 import LockUp from "../components/LockUp";
 import { AnimatePresence, useViewportScroll } from "framer-motion";
@@ -32,6 +33,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Mobil 1 x TRD | Our Proof is on the Podium</title>
+      </Head>
       <div className="h-screen w-full">
         {donePlaying && <LockUp />}
         <AnimatePresence>
