@@ -22,7 +22,7 @@ export default function MobileSecondSection() {
           style={{ scaleY: overlayScale, originY: 1 }}
           className={`text-white text-xl leading-8 text-left absolute top-0 z-30 w-full h-full ${styles.mobileOverlay}`}
         >
-          <div className="w-full flex flex-col gap-4 px-4 items-center justify-center mt-12 h-full">
+          <div className="w-full flex flex-col gap-6 px-4 items-center justify-center mt-12 h-full">
             <motion.p style={{ opacity: firstParagraph }}>
               This TRD-powered funny car uses its 11,000 horsepower
               nitromethane-powered V8 to run down 1,000 feet in under four

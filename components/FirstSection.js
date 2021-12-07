@@ -37,7 +37,7 @@ export default function FirstSection() {
           className={`${styles.textFlyIn} z-20`}
         >
           <p className="text-white text-7xl text-center font-bold">
-            Driver: J.R. Todd
+            Driver: <br /> <span className="font-light">J.R. Todd </span>
           </p>
         </motion.div>
 
@@ -46,7 +46,10 @@ export default function FirstSection() {
           className={`${styles.textFlyIn} z-20`}
         >
           <p className="text-white text-7xl text-center font-bold">
-            First African-American driver to win an NHRA Funny Car championship
+            1st: <br />{" "}
+            <span className="font-light">
+              African-American driver to win a NHRA Funny Car championship
+            </span>
           </p>
         </motion.div>
         <motion.div
@@ -54,7 +57,10 @@ export default function FirstSection() {
           className={`${styles.textFlyIn} z-20`}
         >
           <p className="text-white text-7xl text-center font-bold">
-            1 of 17 drivers to earn both Funny Car and Top Fuel wins
+            1 of 17: <br />{" "}
+            <span className="font-light">
+              Drivers to earn both Funny Car and Top Fuel wins
+            </span>
           </p>
         </motion.div>
       </div>
