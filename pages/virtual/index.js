@@ -1,22 +1,23 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import BackgroundVideo from "../components/BackgroundVideo";
-import LockUp from "../components/LockUp";
 import { AnimatePresence, motion } from "framer-motion";
-import HeroGraphic from "../components/HeroGraphic";
-import FirstSection from "../components/FirstSection";
-import ScrollDownButton from "../components/ScrollDownButton";
-import SecondSection from "../components/SecondSection";
-import ThirdSection from "../components/ThirdSection";
 import { useMediaQuery } from "react-responsive";
-import MobileSecondSection from "../components/MobileSecondSection";
-import MobileThirdSection from "../components/MobileThirdSection";
-import FourthSection from "../components/FourthSection";
-import FormSection from "../components/FormSection";
-import MobileHeroGraphic from "../components/MobileHeroGraphic";
 import { useBottomScrollListener } from "react-bottom-scroll-listener";
 
-export default function Home() {
+import BackgroundVideo from "../../components/BackgroundVideo";
+import LockUp from "../../components/LockUp";
+import HeroGraphic from "../../components/HeroGraphic";
+import FirstSection from "../../components/FirstSection";
+import ScrollDownButton from "../../components/ScrollDownButton";
+import SecondSection from "../../components/SecondSection";
+import ThirdSection from "../../components/ThirdSection";
+import MobileSecondSection from "../../components/MobileSecondSection";
+import MobileThirdSection from "../../components/MobileThirdSection";
+import FourthSection from "../../components/FourthSection";
+import DigitalForm from "../../components/DigitalForm";
+import MobileHeroGraphic from "../../components/MobileHeroGraphic";
+
+export default function VirtualPage() {
   const [donePlaying, setDonePlaying] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [atBottom, setAtBottom] = useState(false);
@@ -59,7 +60,7 @@ export default function Home() {
       {isMobile ? <MobileSecondSection /> : <SecondSection />}
       {isMobile ? <MobileThirdSection /> : <ThirdSection />}
       <FourthSection />
-      <FormSection />
+      <DigitalForm />
 
       {donePlaying && !atBottom && (
         <AnimatePresence>
